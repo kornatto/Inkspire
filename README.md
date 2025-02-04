@@ -6,10 +6,10 @@ Welcome to our group coursework repository for the Information Systems module's 
 
 ## Team Members
 
-- Krishna Singh [Team Leader]
+- Krishna Singh 
 - Prithvi Raj Sah
 - Aarju Sapkota
-- Safal Dangol
+- Safal Dangal
 
 ## Project Overview
 
@@ -35,7 +35,7 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
      ```bash
-    git clone https://github.com/krishna09-dev/IS-Group-CourseWork-sem1
+    git clone https://github.com/kornatto/Inkspire
 
 ## Website Link
 
