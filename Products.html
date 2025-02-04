@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product</title>
+        <meta name="Descrption" content="product page of inkspire (all the types of printer they sell">
+            <meta name="keyword" content="inkspire,3d-printer ,laser printer, Dot Matrix Printers, Inkjet printers">
+            <meta name="Author" content="Krishna">
+            <meta http-equiv="refresh" content="120">
+        <link rel="stylesheet" href="style.css">
+        <style>
+
+            /* styling for product-nav starts here */
+            .product-nav{
+                margin-left: 2.5%;
+                border-radius:30px;
+                width: 95%;
+                height: 30px;
+                background-color: white;
+            }
+            .product-nav ul{
+                display: flex;
+                justify-content: space-around;
+                margin: 0%;
+            }
+            .product-nav ul li{
+                padding: 4px;
+                list-style-type: none;
+            }
+            .product-nav ul li a{
+                color: black;
+                text-decoration: none;
+            }
+            .product-nav ul li a:hover{
+                color: #8a8a8a;
+            }
+
+            /* styling for product-nav ends here */
+
+            .product-container{
+                margin-top: 15px;
+                width: 95%;
+                height: auto;
+                margin-left: 2.5%;
+            }
+            .product-row{
+                border: 2px solid white;
+                margin-bottom: 15px;
+            }
+
+            .product-section{
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                margin-top: 0;
+            }
+            .product{
+                width: 270px;
+                height: 430px;
+                background-color: white;
+                margin: 32px;
+                border-radius: 30px;
+            }
+            .more{
+                width: 150px;
+                height: auto;
+                font-size: 10px;
+                background-color: white;
+                border: solid black;
+                border-radius: 30px;
+                margin-top: 100%;
+                padding: 10px;
+            }
+            .more:hover{
+                color: white;
+                background-color: black;
+                border: solid  white;
+            }
+            .Section-head{
+                margin-left: 80px;
+                color: white;
+                margin-bottom: 0px;
+            }
+
+            .product-name{
+                margin-top: 10px;
+                margin-bottom: 8px;
+                
+            }
+            .buynow{
+                width: 100px;
+                height: 30px;
+                border-radius: 30px;
+                margin-left: 32%;
+                margin-top: 2%;
+                background-color: white;
+                border: solid 2px black;
+                color: black;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .buynow:hover{
+                background-color: rgb(0, 0, 0);
+                color: white;
+                border: solid 2px white;
+            }
+            .product-img{
+                margin-top: 25px;
+                margin-left: 30px;
+                margin-right: 30px;
+                width: 210px ;
+                height: 260px;
+                background-color: #8a8a8a;
+                border-radius: 15px;
+            }
+            .product-section a{
+                text-decoration: none;
+                color: black;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <!-- navigation starts here -->
+        
+        <nav>
+            <!-- used table to align logo and navigation  -->
+            <table width="100%" >
+                <tr >
+                    <th align="left" style="width: 60%;  padding-bottom: 0%;" >
+                        <img src="/images/nav.png" alt="nav-logo"  style="padding-left: 1%; width: 55pxpx; height: 50px;">
+                    </th>
+
+                    <th class="nav-list" style="height: 40px;">
+                        <!-- parent container ul -->
+                        <ul>  
+                            <!-- child elements li -->
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="Products.html">Product</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="Services.html">Servies</a>
+                            </li>
+                            <li>
+                                <a href="About-us.html">About us</a>
+                            </li>
+                        </ul>
+                    </th>
+                </tr>
+            </table>
+        </nav>
+
+
+        <!-- navigation ends here -->
+
+
+
+
+        <!-- product-nav start here -->
+
+
+        <div class="product-nav">
+            <!-- parent container ul -->
+            <ul>
+                <!-- child elements li -->
+                <li><a href="Products.html">All</a></li>
+                <li><a href="3d-printer.html">3d-Printer</a></li>
+                <li><a href="Laser-Printer.html">Laser-Printer</a></li>
+                <li><a href="Dot-Matrix-Printer.html">Dot-Matrix-Printer</a></li>
+                <li><a href="Inkjet printer.html">Inkjet printer</a></li>
+                <li><a href="Accessories.html">Accessories</a></li>
+            </ul>
+        </div>
+
+        <!-- product-nav ends here -->
+
+
+
+        <!-- product section starts here -->
+
+        <div class="product-container">
+
+            <!-- 3D-Printer -->
+
+            <div class="product-row">
+                <h1 class="Section-head">3D-Printer</h1>  <!--header to know the type of product -->
+
+                <!-- parent container -->
+
+                <div class="product-section">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link) -->
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/3d-printer/P1S.png" alt="P1S">
+                            <h2 class="product-name" align="center">Bambu Lab P1S <br> <span style="font-size: 17px;"> Price : $2000.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/3d-printer/K1-Max.png" alt="K1 Max">
+                            <h2 class="product-name" align="center">K1 Max <br> <span style="font-size: 17px;"> Price : $672.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/3d-printer/Ender-3-V3-KE.png" alt="Ender3 V3 KE">
+                            <h2 class="product-name" align="center">  Ender3 V3 KE <br> <span style="font-size: 17px;"> Price : $882.00 </span></h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+
+                    <!-- see more to go to dedicated products section of that kind -->
+
+
+                    <a class="super-product" href="3d-printer.html">
+                        <div class="more">
+                            <h1 align="center">See More</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- Laser-Printer -->
+
+
+            <div class="product-row">
+                <h1 class="Section-head">Laser-Printer</h1>    <!--header to know the type of product -->
+
+                <!-- parent container -->
+
+                <div class="product-section">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link)-->
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/laser-Printer/DCP-B7535DW.png" alt="DCP-B7535DW">
+                            <h2 class="product-name" align="center">DCP-B7535DW <br> <span style="font-size: 17px;"> Price : $452.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/laser-Printer/HL-B2080DW.png" alt="HL-B2080DW">
+                            <h2 class="product-name" align="center">HL-B2080DW <br> <span style="font-size: 17px;"> Price : $299.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/laser-Printer/HL-L3270CDW.png" alt="HL-L3270CDW">
+                            <h2 class="product-name" align="center">HL-L3270CDW <br> <span style="font-size: 17px;"> Price : $342.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <!-- see more to go to dedicated products section of that kind -->
+
+                    <a class="super-product" href="Laser-Printer.html">
+                        <div class="more">
+                            <h1 align="center">See More </h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- >Dot-Matrix-Printer -->
+
+            <div class="product-row">
+                <h1 class="Section-head">Dot-Matrix-Printer</h1>    <!--header to know the type of product -->
+
+                <!-- parent container -->
+
+                <div class="product-section">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link) -->
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/Dot-Matrix-Printers/MSP 250.png" alt="MSP 250">
+                            <h2 class="product-name" align="center">MSP 250 <br> <span style="font-size: 17px;"> Price : $232.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/Dot-Matrix-Printers/Msp 240 Classic.png" alt="Msp 240 Classic">
+                            <h2 class="product-name" align="center">Msp 240 Classic <br> <span style="font-size: 17px;"> Price : $322.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/Dot-Matrix-Printers/LX-310.png" alt="LX-310">
+                            <h2 class="product-name" align="center">LX-310 <br> <span style="font-size: 17px;"> Price : $402.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <!-- see more to go to dedicated products section of that kind -->
+
+                    <a class="super-product" href="Dot-Matrix-Printer.html">
+                        <div class="more">
+                            <h1 align="center">See More</h1>
+                        </div>
+                    </a>          
+                </div>
+            </div>
+
+
+            <!-- Inkjet printer -->
+
+
+            <div class="product-row">
+                <h1 class="Section-head">Inkjet printer</h1>    <!--header to know the type of product -->
+
+                <!-- parent container -->
+
+                <div class="product-section">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link) -->
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/Inkjet-printer/ET-2400.png" alt="ET-2400">
+                            <h2 class="product-name" align="center">ET-2400 <br> <span style="font-size: 17px;"> Price : $299.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/Inkjet-printer/ET-4850.png" alt="ET-4850">
+                            <h2 class="product-name" align="center">ET-4850 <br> <span style="font-size: 17px;"> Price : $322.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/Inkjet-printer/PIXMA G4770.png" alt="PIXMA G4770">
+                            <h2 class="product-name" align="center">PIXMA G4770 <br> <span style="font-size: 17px;"> Price : $232.00 </span> </h2>
+                            <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <!-- see more to go to dedicated products section of that kind -->
+
+                    <a class="super-product" href="Inkjet printer.html">
+                        <div class="more">
+                            <h1 align="center">See More</h1>
+                        </div>
+                    </a>          
+                </div>
+            </div>
+
+
+
+            <!-- Accesroies -->
+
+
+
+            <div class="product-row">
+                <h1 class="Section-head">Accesroies</h1>    <!--header to know the type of product -->
+
+                <!-- parent container -->
+
+                <div class="product-section">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link) -->
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/Accessories/3D Print Removal.png" alt="3D Print Removal">
+                        <h2 class="product-name" align="center"> 3D Print Removal <br> <span style="font-size: 17px;"> Price : $20.00 </span> </h2>
+                        <<a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/Accessories/Pilers.png" alt="Pilers">
+                        <h2 class="product-name" align="center">Pilers <br> <span style="font-size: 17px;"> Price : $24.00 </span> </h2>
+                        <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/Accessories/PVA Glue Stick.png" alt="PVA Glue Stick">
+                        <h2 class="product-name" align="center">PVA Glue Stick <br> <span style="font-size: 17px;"> Price : $25.00 </span> </h2>
+                        <a href="checkout.html"> <button class="buynow"> Buy Now </button></a>
+                        </div>
+                    </a>
+
+                    <!-- see more to go to dedicated products section of that kind -->
+
+                    <a class="super-product" href="Accessories.html">
+                        <div class="more">
+                            <h1 align="center">See More</h1>
+                        </div>
+                    </a>          
+                </div>
+            </div>
+        </div>
+
+
+        <!-- product section ends here -->
+
+
+        <!-- footer starts here -->
+
+
+        <footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0); margin-top: 10%; ">
+
+            <!-- footer divide into two part upper-footer and lower-footer -->
+
+
+            <!-- upper-footer start from here (it contain our logo and little discription and few links and news-letter signup section)  -->
+
+            <div class="upper-footer">
+
+
+                <!-- footer logo -->
+
+                <div class="Footer-logo">
+                    <h1 style="font-size: 40px; margin-bottom: 0%;">Inkspire</h1>
+                    <h3 style="margin: 0%; padding-left: 10%; font-size: 10px;">"Speed up Productivity"</h3>
+                </div>
+                 
+                <!-- description about us  -->
+
+                <div class="des">
+                    <p ">"Inkspire: Your worldwide hub for <br>
+                        top-notch printer supplies. From 3D printers to laser <br>
+                        printers, discover excellence in printing <br>
+                        solutions globally.Elevate every print with <br>
+                        Inkspire."
+                    </p>
+                </div>
+
+                <!-- few links to go another pages  -->
+
+                <div class="links">
+                    <h2 style="margin-top: 70%; margin-bottom: 0%; font-size: 20px;">Links</h2>
+                    <ul style="margin: 0%;">
+                        <li class="footer-nav"><a href="About-us.html">About us</a></li>
+                        <li class="footer-nav"><a href="Research.html">Research</a></li>
+                        <li class="footer-nav"><a href="blog.html">Blogs</a></li>
+                        <li class="footer-nav"><a href="support.html">Support</a></li>
+                        <li class="footer-nav"><a href="Faq.html">FaQ</a></li>
+                        <li class="footer-nav"><a href="location.html">Our Location</a></li>
+                    </ul>
+                </div>
+
+                <!-- news-letter signup section -->
+
+                <div class="news-letter">
+
+                    <h1 style="margin: 0%; font-family: cursive; font-weight: 100;">
+                        News Letter
+                    </h1>
+
+                    <!-- form -->
+                    <form name="news-form" onsubmit="validate_newsletter()">
+                        <img src="/images/mail.png" alt="mail" style="width: 20px; height: 20px; padding-top:2px;">
+                        <input class="letter" name="newsletter" type="email" placeholder="Lets Stay Conneted">                 
+                        <button class="button"><img src="/images/send.png" alt="" style="width: 20px; height: 20px;"></button><br>
+                        <hr style="margin-top: 0%; margin-bottom: 1%;">
+                        <h5 style="margin: 0%;">I accept all the terms and condition.</h5>
+                    </form>
+                </div>
+            </div>
+
+            <br>
+
+            <hr width="80%">
+
+            <!-- lower-footer starts from here it contains copyright section and our social media links -->
+
+            <div class="lower-footer">
+
+                <!-- copyright section -->
+
+                <h6 style="color: #8a8a8a; margin: 0; ">Copyright © 2023 Inkspire. All Rights Reserved by Inkspire teams</h6>
+
+
+                <!-- social media links -->
+
+                <div class="social">
+                    <a href=" https://www.facebook.com/"><img class="footer-icon" src="/images/facebook.png" alt=""></a>
+                    <a href=" https://www.instagram.com/"><img class="footer-icon" src="/images/instagram.png" alt=""></a>
+                    <a href=" https://twitter.com/"><img class="footer-icon" src="/images/twitter.png" alt=""></a>        
+                    <a href=" https://www.linkedin.com/"><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer ends here -->
+        
+    </body>
+    <script src="javascript.js"></script>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Support</title>
+        <meta name="Descrption" content="Support page of inkspire">
+        <meta name="keyword" content="inkspire, support , help from inkspire, support from inkspire team">
+        <meta name="Author" content="Aarju">
+        <meta http-equiv="refresh" content="120">
+        <link rel="stylesheet" href="style.css">
+	<style>
+        .main{
+            width: 80%;
+            height: 400px;
+            background-color: white;
+            margin-top: 30px;
+            margin-left: 10%;
+            border-radius: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        label{
+            color: black;
+        }
+        .input-box{
+            height: 15px;
+            background-color: transparent;
+            border: 0px;
+            background-color: #bababa;
+            width: 270px;
+            outline: none;
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .input-box:focus{                              /* for changing color when clicked*/
+            background-color: black;
+            color: white;
+        }
+        .send-button{
+            width: 90px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: white;
+            border: solid 2px black;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .send-button:hover{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        
+	 </style>
+
+
+    </head>
+
+
+    <body>
+	 <!-- navigation starts here -->
+
+        <nav>
+            <!-- used table to align logo and navigation  -->
+            <table width="100%" >
+                <tr >
+                    <th align="left" style="width: 60%;  padding-bottom: 0%;" >
+                        <img src="/images/nav.png" alt="nav-logo"  style="padding-left: 1%; width: 55pxpx; height: 50px;">
+                    </th>
+
+                    <th class="nav-list" style="height: 40px;">
+                        <!-- parent container ul -->
+                        <ul>
+                            <!-- child elements li -->
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="Products.html">Product</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="Services.html">Servies</a>
+                            </li>
+                            <li>
+                                <a href="About-us.html">About us</a>
+                            </li>
+                        </ul>
+                    </th>
+                </tr>
+            </table>
+        </nav>
+
+        <!-- navigation ends here -->
+	
+
+	    <!--logo section starts-->
+
+        <div class="logo" align="center" style="background-color: white;">
+            <img src="/images/logo.png" alt="logo"  style="width: 40vh; height: auto;">
+        </div>
+        <!--logo section ends-->
+
+
+        <h1 align="center" style="color: white; font-size: 45px;">Support</h1>
+
+      <div class="main">
+        <form name="support_form">
+            <label >Name</label> <br>
+            <input type="text" name="name" class="input-box"  placeholder="Name"> <br> 
+            
+            <label >Email</label> <br>
+            <input type="email" name="email" class="input-box" placeholder="Email"><br> 
+    
+            <label >Message</label> <br>
+            <textarea class="input-box" name="message" cols="30" rows="10" placeholder="Message" style="height: auto;"></textarea> <br>
+
+            
+            <button class="send-button" onclick="validate_support()">Send</button>
+            
+        </form>
+        <h1 style="color: black; text-align: center; font-size: 35px;">
+            Hello!!! <br>
+            We are here to help <br> you out!!!
+        </h1>
+        
+      </div>
+
+	<!-- footer starts here -->
+        <footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0);  ">
+            <div class="upper-footer">
+                <div class="Footer-logo">
+                    <h1 style="font-size: 40px; margin-bottom: 0%;">Inkspire</h1>
+                    <h3 style="margin: 0%; padding-left: 10%; font-size: 10px;">"Speed up Productivity"</h3>
+                </div>
+
+                <div class="des">
+                    <p ">"Inkspire: Your worldwide hub for <br>
+                        top-notch printer supplies. From 3D printers to laser <br>
+                        printers, discover excellence in printing <br>
+                        solutions globally.Elevate every print with <br>
+                        Inkspire."
+                    </p>
+                </div>
+
+                <div class="links">
+                    <h2 style="margin-top: 70%; margin-bottom: 0%; font-size: 20px;">Links</h2>
+                    <ul style="margin: 0%;">
+                        <li class="footer-nav"><a href="About-us.html">About us</a></li>
+                        <li class="footer-nav"><a href="Research.html">Research</a></li>
+                        <li class="footer-nav"><a href="blog.html">Blogs</a></li>
+                        <li class="footer-nav"><a href="support.html">Support</a></li>
+                        <li class="footer-nav"><a href="Faq.html">FaQ</a></li>
+                        <li class="footer-nav"><a href="location.html">Our Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="news-letter">
+                    <h1 style="margin: 0%; font-family: cursive; font-weight: 100;">
+                        News Letter
+                    </h1>
+                    <form name="news-form" onsubmit="validate_newsletter()">
+                        <img src="/images/mail.png" alt="mail" style="width: 20px; height: 20px; padding-top:2px;">
+                        <input class="letter" name="newsletter" type="email" placeholder="Lets Stay Conneted">                 
+                        <button class="button"><img src="/images/send.png" alt="" style="width: 20px; height: 20px;"></button><br>
+                        <hr style="margin-top: 0%; margin-bottom: 1%;">
+                        <h5 style="margin: 0%;">I accept all the terms and condition.</h5>
+                    </form>
+                </div>
+            </div>
+
+            <br>
+
+            <hr width="80%">
+            <div class="lower-footer">
+                <h6 style="color: #8a8a8a; margin: 0; ">Copyright © 2023 Inkspire. All Rights Reserved by Inkspire teams</h6>
+                <div class="social">
+                    <a href=" https://www.facebook.com/"><img class="footer-icon" src="/images/facebook.png" alt=""></a>
+                    <a href=" https://www.instagram.com/"><img class="footer-icon" src="/images/instagram.png" alt=""></a>
+                    <a href=" https://twitter.com/"><img class="footer-icon" src="/images/twitter.png" alt=""></a>        
+                    <a href=" https://www.linkedin.com/"><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer ends here -->
+
+
+    </body>
+
+    <script>
+
+    // newsletter validation starts here
+    function validate_newsletter(){
+    var email = document.forms['news-form']['newsletter'].value;
+        if (email != "") {
+            alert("Thank u for Signing up for Newsletter");
+        }
+    }
+    // newsletter validation ends here
+
+    // support form validation starts here
+    function validate_support(){
+        var name = document.forms['support_form']['name'].value;
+        var email = document.forms['support_form']['email'].value;
+        var message = document.forms['support_form']['message'].value;
+        if (name == "" || email == "" || message == "") {
+            alert("Please fill all the fields");
+        }
+        else{
+            alert("Thank u for contacting us");
+        }
+    }
+
+    </script>
+</html>

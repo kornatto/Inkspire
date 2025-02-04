@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prithvi CV</title>
+    <meta name="Descrption" content="servies which inkspire has to offer">
+    <meta name="keyword" content="inkspire, team , team-members, Prithvi, Krishna, Aarju, Safal, inkspire team">
+    <meta name="Author" content="Prithvi">
+    <meta http-equiv="refresh" content="120">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about{
+            display: block;
+        }
+        .contact{
+            display: none;
+        }
+        .main{
+            width: 95%;
+            margin-left: 2%;
+            border: solid #8a8a8a;
+            color: #8a8a8a;
+        }
+        .list ul{  
+            display: flex;
+            list-style-type: none;
+            margin-bottom: 0;
+        }
+        .list ul li a{
+            margin-left: 30px;
+            margin-top: 1px; 
+            margin-bottom: 0;
+            color: #8a8a8a;
+            text-decoration: none;
+        }
+        .list ul li a:hover{
+            color: white;
+        }
+        .port{
+            background-color: transparent;
+            color: #8a8a8a;
+            border: none;
+            font-size: 20px;
+            margin-left: 25px;
+        }
+        .port:hover{
+            color: white;
+        }
+
+        .photo{
+            width: 300px;
+            height: 300px;
+            margin-left: 39%;
+            margin-top: 60px;
+            border-radius: 50%;
+            border: 5px solid #8a8a8a;
+            background-image: url(/images/profile-pic/aarju.png);
+        }
+        .about-text{
+            margin: 0;
+        }
+        .tech_list{
+            display: flex; 
+            margin-bottom: 40px;  
+        }
+        .tech_list li{
+            margin-left: 50px;
+        }
+
+
+        /* contact */
+        .profile-links a{
+            text-decoration: none;
+        }
+        .profile-links img{
+            width: 35px;
+            height: 35px;
+        }
+
+        /* form */
+        .contact{
+            margin-left: 10%;
+        }
+        .single-contact{
+            margin-top: 50px;
+            margin-bottom: 70px;
+        }
+        label{
+            font-size: 30px;
+            color: #8a8a8a;
+        }
+        .input-box{
+            height: 15px;
+            background-color: transparent;
+            border: 0px;
+            background-color: white;
+            width: 270px;
+            outline: none;
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .input-box:focus{                              /* for changing color when clicked*/
+            background-color: #bababa;
+            color: black;
+        }
+        .send-button{
+            width: 90px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: white;
+            border: solid 2px black;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .send-button:hover{
+            background-color: rgb(0, 0, 0);
+            border: solid 2px white;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+
+<!-- navigation starts here -->
+
+<nav>
+    <table width="100%" >
+        <tr >
+            <th align="left" style="width: 60%;  padding-bottom: 0%;" >
+                <img src="/images/nav.png" alt="nav-logo"  style="padding-left: 1%; width: 55pxpx; height: 50px;">
+            </th>
+
+            <th class="nav-list" style="height: 40px;">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Products.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="Services.html">Servies</a>
+                    </li>
+                    <li>
+                        <a href="About-us.html">About us</a>
+                    </li>
+                </ul>
+            </th>
+        </tr>
+    </table>
+</nav>
+
+<!-- navigation ends here -->
+
+<div class="main"> 
+    
+        <table style="width: 100%;"> 
+            <tr>
+                <th style="width: 75%;">
+                    <h1 align="left" style="color: #8a8a8a; margin-left: 7%; font-size: 17px; margin-top: 10px; margin-bottom: 0;"> prithivi(); </h1>
+                </th>
+                <th class="list">
+                    <ul>
+                        <li>
+                            <button onclick="about_selator()" class="port">About</button>
+                        </li>
+                        <li>
+                            <button onclick="contact_selator()" class="port" >Contact</button>
+                        </li>
+                        <li>
+                            <a href="https://github.com/prithivirajsah"><img src="/images/about-icons/nav-github.png" alt="" style="width: 25px; "></a>
+                        </li>
+                    </ul>
+                </th>
+            </tr>
+        </table>
+        <hr style="width: 90%; background-color: #8a8a8a; height: 1px;">
+
+        <div class="about" id="about">
+            <div class="photo" style="background-image: url(/images/profile-pic/prithvi.png);"></div>
+            <div align="center">
+                <h2 class="about-text"> Howdy!! </h2>
+                <h2 class="about-text">It's me Prithivi Raj Sah.</h2>
+                <h2 class="about-text" style="color: #FD8989;" id="typing-text"></h2>
+                <h2 class="about-text">Welcome to my about section</h2>
+            </div>
+            <h1 style="margin-left: 7%;">Aboutme</h1>
+            <hr width="90%">
+            <p style="margin-left: 5%; margin-right: 5%;" >
+                Hi,I am Prithivi Raj Shah a dedicated and proactive individual from Nepal.
+                As a computing student from coding in languages like Java python to diving into database management and software development, 
+                I've gained a wide range of skills to analyze problems and come up with creative solutions.
+                I am passionate about technology and eager to become a tech expert 
+                With a thirst for knowledge and a drive to succeed, I am committed to embracing the opportunities that come my way, 
+                and I am enthusiastic about the journey ahead in the ever evolving world of technology
+            </p>
+            
+                <h1 style="margin-left: 7%;">Skills</h1>
+                <hr width="90%">
+                <h1 style="font-size: 25PX; margin-left: 7%;">Expertise</h1>
+                <div>
+                    <ul class="tech_list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>javascript</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            <h1 style="font-size: 25px; margin-left:8%;">Tools</h1>
+                <div>
+                    <ul class="tech_list" style="margin-bottom: 90px;">
+                        <li>Vs Code</li>
+                        <li>Balsmiq</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div style="display: flex; justify-content: center; margin-left: -8%;">
+                <h1 align="center" style="color: #8a8a8a;margin: 0;">Get in Touch !!!&nbsp;&nbsp; </h1><img src="/images/mail.png" alt="mail" style="width: 70px; height: 50px;">
+            </div>
+            <hr style="width: 95%; margin-left: -3%; background-color: #8a8a8a; height: 1px;">
+            <br>
+            <br>
+            <h1 style="box-sizing: border-box; font-size: 25px;color: #8a8a8a;"><img src="images/about-icons/ID.png" alt="ID" style="width: 40px;"> Prithivi Raj Shah</h1>
+            <h1 style="font-size: 25px;color: #8a8a8a;"><img src="images/mail.png" alt="" style="width: 40px;"> prithvirajsah584@gmail.com</h1>
+            <h1 style="font-size: 25px;color: #8a8a8a;"><img src="images/about-icons/Phone.png" alt="Phone" style="width: 40px;"> +977 9819718549</h1>
+            <div class="profile-links">
+                <a href="https://www.facebook.com/profile.php?id=100084882249955">
+                    <img src="images/facebook.png" alt="facebook">&nbsp;
+                </a>
+                <a href="https://www.instagram.com/prithivirajsah1/">
+                    <img src="images/instagram.png" alt="instagram">&nbsp;
+                </a>
+                <a href="https://www.linkedin.com/in/prithivirajsah-bb4314297/">
+                    <img src="images/linkdein.png" alt="linkdein">&nbsp;
+                </a>
+                <a href="https://twitter.com/PrithiviRajSah1">
+                    <img src="images/twitter.png" alt="twitter">&nbsp;
+                </a>
+                <a href="https://github.com/prithivirajsah">
+                    <img src="/images/about-icons/nav-github.png" alt="github">&nbsp;
+                </a>
+            </div>
+
+            <H1 style="margin-left:20%; margin-top: 5%;font-size: 60px; color: #FD8989;">Send Message</H1>
+            <div class="single-contact">
+                <form name="contactform" onsubmit="validate_contact() ">
+                    <label >Name</label> <br>
+                    <input type="text" name="fullname" class="input-box"  placeholder="Name"> <br> 
+                    
+                    <label >Email</label> <br>
+                    <input type="email" name="youremail" class="input-box" placeholder="Email"><br> 
+            
+                    <label >Message</label> <br>
+                    <textarea class="input-box" name="yourmessage" cols="30" rows="10" placeholder="Message" style="height: auto;"></textarea> <br>
+        
+                    <input type="submit" class="send-button" value="Send">
+                    
+                </form>
+            </div>
+        </div>
+</div>
+
+<!-- footer starts here -->
+
+<footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0);">
+    <div class="upper-footer">
+        <div class="Footer-logo">
+            <h1 style="font-size: 40px; margin-bottom: 0%;">Inkspire</h1>
+            <h3 style="margin: 0%; padding-left: 10%; font-size: 10px;">"Speed up Productivity"</h3>
+        </div>
+        <div class="des">
+            <p ">"Inkspire: Your worldwide hub for <br>
+                top-notch printer supplies. From 3D printers to laser <br>
+                printers, discover excellence in printing <br>
+                solutions globally.Elevate every print with <br>
+                Inkspire."
+            </p>
+        </div>
+        <div class="links">
+            <h2 style="margin-top: 70%; margin-bottom: 0%; font-size: 20px;">Links</h2>
+            <ul style="margin: 0%;">
+                <li class="footer-nav"><a href="About-us.html">About us</a></li>
+                <li class="footer-nav"><a href="Research.html">Research</a></li>
+                <li class="footer-nav"><a href="blog.html">Blogs</a></li>
+                <li class="footer-nav"><a href="support.html">Support</a></li>
+                <li class="footer-nav"><a href="Faq.html">FaQ</a></li>
+                <li class="footer-nav"><a href="location.html">Our Location</a></li>
+            </ul>
+        </div>
+        <div class="news-letter">
+            <h1 style="margin: 0%; font-family: cursive; font-weight: 100;">
+                News Letter
+            </h1>
+            <form name="news-form" onsubmit="validate_newsletter()">
+                <img src="/images/mail.png" alt="mail" style="width: 20px; height: 20px; padding-top:2px;">
+                <input class="letter" name="newsletter" type="email" placeholder="Lets Stay Conneted">                 
+                <button class="button"><img src="/images/send.png" alt="" style="width: 20px; height: 20px;"></button><br>
+                <hr style="margin-top: 0%; margin-bottom: 1%;">
+                <h5 style="margin: 0%;">I accept all the terms and condition.</h5>
+            </form>
+        </div>
+    </div>
+    <br>
+    <hr width="80%">
+    <div class="lower-footer">
+        <h6 style="color: #8a8a8a; margin: 0; ">Copyright © 2023 Inkspire. All Rights Reserved by Inkspire teams</h6>
+        <div class="social">
+            <<a href=" https://www.facebook.com/"><img class="footer-icon" src="/images/facebook.png" alt=""></a>
+            <a href=" https://www.instagram.com/"><img class="footer-icon" src="/images/instagram.png" alt=""></a>
+            <a href=" https://twitter.com/"><img class="footer-icon" src="/images/twitter.png" alt=""></a>        
+            <a href=" https://www.linkedin.com/"><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
+        </div>
+    </div>
+</footer>
+
+<!-- footer ends here -->
+
+</body>
+<script>
+
+    // nav  function starts here
+    function about_selator() {
+        document.getElementById("contact").style.display="none";
+        document.getElementById("about").style.display="block";
+    }
+    function contact_selator() {
+        document.getElementById("about").style.display="none";
+        document.getElementById("contact").style.display="block";
+    }
+    document.getElementById("about").style.display="block";
+    // nav  function ends here
+    
+
+
+    // contact validation starts here
+    function validate_contact() {
+    event.preventDefault(); 
+    var fullname = document.forms['contactform']['fullname'].value;
+    var youremail = document.forms['contactform']['youremail'].value;
+    var yourmessage = document.forms['contactform']['yourmessage'].value;
+        if (fullname != "" || youremail != "" || yourmessage != "") {
+            alert("Thank you for contacting us");
+        }else{
+            alert("Please fill the form");
+        }
+    }
+    // contact validation ends here
+
+    
+
+
+    // newsletter validation starts here
+    function validate_newsletter(){
+    var email = document.forms['news-form']['newsletter'].value;
+        if (email != "") {
+            alert("Thank u for Signing up for Newsletter");
+        }
+    }
+    // newsletter validation ends here
+
+
+    // typing text starts here
+    var dis = document.getElementById("typing-text");
+    var letters = ["U","p","c","o","m","i","n","g"," "," ","W", "e", "b", " "," ","D","e","v","e","l","o","p","e","r",".",".","."];
+    var num = letters.length;
+    function word(i) {
+        dis.innerHTML += letters[i];
+    }
+    
+    function type_text() {
+        for (let i = 0; i < num; i++) {
+            setTimeout(word,i*300,i);
+            
+        }
+    }
+    
+    window.onload = type_text;
+    // typing text ends here
+
+
+</script>
+</html>

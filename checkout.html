@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Checkout</title>
+    <meta name="Descrption" content="product page of inkspire (all the types of printer they sell)">
+    <meta name="keyword" content="inkspire,3d-printer ,laser printer, Dot Matrix Printers, Inkjet printers">
+    <meta name="Author" content="Safal">
+    <meta http-equiv="refresh" content="120">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .checkout-section-h1{
+        font-size: 60px;
+        margin-bottom: 0;
+        margin-top: 2%;
+        color: white;
+        font-family:cursive;
+    }
+    .checkout {
+        width: 70%;
+        height: 650px;
+        background-color: white;
+        margin: 30px;
+        margin-left: 16%;
+        border-radius: 80px;
+    }
+    .container2 {
+        
+        font-size: 100px;
+        font-family: cursive;
+    }
+
+    .container2 h2 {
+        font-weight: bold;
+        font-size: 10px;
+        margin-bottom: 10px;
+        padding-left: 100px;
+    }
+
+    .container2 h5 {
+        padding-left: 100px;
+        margin-top: 100px;
+    }
+
+    .notice-text{
+        margin-top: -40px;
+        margin-left: 60px;
+    }
+
+    .form-heading{
+        padding-top: 30px;
+    
+    }    
+
+    .input-box {
+        height: 15px;
+        background-color: transparent;
+        border: 0px;
+        background-color: #bababa;
+        width: 270px;
+        outline: none;
+        border-radius: 10px;
+        color: black;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }    
+    
+    .Place-Order{
+            width: 150px;
+            height: 40px;
+            border-radius: 50px;
+            background-color: black;
+            border: solid 2px black;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+    }
+
+    .Place-Order:hover{
+            background-color: white;
+            color: black;
+    }    
+    </style>
+</head>
+
+<body>
+
+    <!-- navigation starts here -->
+    <nav>
+            <table width="100%" >
+                <tr >
+                    <th align="left" style="width: 60%;  padding-bottom: 0%;" >
+                        <img src="/images/nav.png" alt="nav-logo"  style="padding-left: 1%; width: 55pxpx; height: 50px;">
+                    </th>
+
+                    <th class="nav-list" style="height: 40px;">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="Products.html">Product</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="Services.html">Servies</a>
+                            </li>
+                            <li>
+                                <a href="About-us.html">About us</a>
+                            </li>
+                        </ul>
+                    </th>
+                </tr>
+            </table>
+        </nav>
+
+
+    <!-- navigation ends here -->
+    <div class="logo" align="center" style="background-color: white;">
+        <img src="/images/logo.png" alt="logo" style="width: 40vh; height: auto;">
+    </div>
+
+    <h1 align="center" class="checkout-section-h1">Checkout</h1>
+
+        <div class="checkout">
+    
+            <h2 class="form-heading" align="center">Please fill the Billing Details</h2>
+            <form style="margin-left: 10%;" name="checkoutform" onsubmit="validate()">
+                <label>Name:</label>
+                <input type="text" name="fullname" class="input-box" placeholder="Your Full Name Please" style="width: 40%;">
+                <br>
+                <label>E-mail:</label>
+                <input type="text" name="youremail" class="input-box" placeholder="E-mail here" style="width: 40%;">
+                <br>
+                <label>Phone number:</label>
+                <input type="text" name="yournumber" class="input-box" placeholder="Phone Number Please" style="width: 34%;">
+                <br>
+                <label>Country:</label>
+                <input type="text" name="yourcountry" class="input-box" placeholder="Your Country Name Please" style="width: 39%;">
+                <br>
+                <label>City:</label>
+                <input type="text" name="yourcity" class="input-box" placeholder="Your City Name Please" style="width: 42%;">
+                <br>
+                <label>Zip Code:</label>
+                <input type="text" name="yourzip" class="input-box" placeholder="Your Zip Code Please" style="width: 38%;">
+                <br>
+                <label>Billing address:</label>
+                <input type="text" name="yourbilling" class="input-box" placeholder="Your detail address here" style="width: 33%;">
+                <br>
+                <label>Payment method:</label> 
+                <input type="radio" name="payment" value="Cash on Delivery" checked >Cash on Delivery
+                <input type="radio" name="payment" value="Online Payment">Online Payment
+                <br><br>
+                <h5 style="margin-top: 0; margin-bottom: 0;">Note : For payment you will be contacted through your mail within 24hr</h5>
+                <br>
+                <input class="Place-Order" type="submit" value="Place Order">
+                
+            </form>
+
+        </div>
+    
+      
+ <!-- footer starts here -->
+<footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0);  " align="left">
+    <div class="upper-footer">
+        <div class="Footer-logo">
+            <h1 style="font-size: 40px; margin-bottom: 0%;">Inkspire</h1>
+            <h3 style="margin: 0%; padding-left: 10%; font-size: 10px;">"Speed up Productivity"</h3>
+        </div>
+        <div class="des">
+            <p>"Inkspire: Your worldwide hub for<br>
+                top-notch printer supplies. From 3D printers to laser <br>
+                printers, discover excellence in printing <br>
+                solutions globally.Elevate every print with <br>
+                Inkspire."
+            </p>
+        </div>
+        <div class="links">
+            <h2 style="margin-top: 70%; margin-bottom: 0%; font-size: 20px;">Links</h2>
+            <ul style="margin: 0%;">
+                <li class="footer-nav"><a href="About-us.html">About us</a></li>
+                <li class="footer-nav"><a href="Research.html">Research</a></li>
+                <li class="footer-nav"><a href="blog.html">Blogs</a></li>
+                <li class="footer-nav"><a href="support.html">Support</a></li>
+                <li class="footer-nav"><a href="Faq.html">FaQ</a></li>
+                <li class="footer-nav"><a href="location.html">Our Location</a></li>
+            </ul>
+        </div>
+        <div class="news-letter">
+            <h1 style="margin: 0%; font-family: cursive; font-weight: 100;">
+                News Letter
+            </h1>
+            <form name="news-form" onsubmit="validate_newsletter()">
+                <img src="/images/mail.png" alt="mail" style="width: 20px; height: 20px; padding-top:2px;">
+                <input class="letter" name="newsletter" type="email" placeholder="Lets Stay Conneted">                 
+                <button class="button"><img src="/images/send.png" alt="" style="width: 20px; height: 20px;"></button><br>
+                <hr style="margin-top: 0%; margin-bottom: 1%;">
+                <h5 style="margin: 0%;">I accept all the terms and condition.</h5>
+            </form>
+        </div>
+    </div>
+    <br>
+    <hr width="80%">
+    <div class="lower-footer">
+        <h6 style="color: #8a8a8a; margin: 0; ">Copyright © 2023 Inkspire. All Rights Reserved by Inkspire teams</h6>
+        <div class="social">
+            <a href=" https://www.facebook.com/"><img class="footer-icon" src="/images/facebook.png" alt=""></a>
+            <a href=" https://www.instagram.com/"><img class="footer-icon" src="/images/instagram.png" alt=""></a>
+            <a href=" https://twitter.com/"><img class="footer-icon" src="/images/twitter.png" alt=""></a>        
+            <a href=" https://www.linkedin.com/"><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
+        </div>
+    </div>
+</footer>
+<!-- footer ends here -->
+
+</body>
+<script src="javascript.js"></script>
+</html>
+                   
